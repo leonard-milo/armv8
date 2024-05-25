@@ -1,52 +1,34 @@
-# Prerequisites
-*.d
+#This the the canonical lab .gitignore file
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+#ignore temp files
+*~
 
-# Linker output
-*.ilk
-*.map
-*.exp
+#ignore pdf files (just keep source files)
+*.pdf
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
+#ignore junk files from latex output
 *.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+*.log
+*.aux
+*.dvi
+*.ps
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+#ignore junk files from compiling C code
+*.o
+emulate
+assemble
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+#ignore junk files from compiling Haskell code
+*.hi
+
+#ignore junk files from compiling Java code
+*.class
+
+#ignore other junk files
+*.backup
+*.kate-swp
+*.swp
+*.snm
+*.vrb
+*.nav
+*.toc
